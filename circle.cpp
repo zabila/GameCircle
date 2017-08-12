@@ -7,13 +7,13 @@ Circle::Circle(QObject *parent) : QObject(parent)
 
 }
 
-int Circle::getRandomY()
+const int Circle::getRandomY()
 {
     y = rand() % 540;
     return y;
 }
 
-int Circle::getRandomX()
+const int Circle::getRandomX()
 {
       x = rand() % 540;
      return x;

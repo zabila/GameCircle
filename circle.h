@@ -11,8 +11,8 @@ class Circle : public QObject
 
 public:
     explicit Circle(QObject *parent = nullptr);
-    int getRandomX();
-    int getRandomY();
+    const int getRandomX();
+    const int getRandomY();
 signals:
     void xPosition();
     void yPosition();

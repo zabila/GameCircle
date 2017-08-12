@@ -120,67 +120,18 @@ Window {
             id: listModel
 
 
-            //            dynamicRoles: true
-            //            Component.onCompleted: {
-            //                var i;
-            //                for (i = 0; i < 10; i++) {
-            //                    append({})
-            //                }
-            //            }
-
-
-            ListElement{
-                speed: 400
-                score: 50
-            }
-
-            ListElement{
-                speed: 600
-                score: 20
-            }
-            ListElement{
-                speed: 700
-                score: 10
-            }
-
-            ListElement{
-                speed: 800
-                score: 5
-            }
-
-            ListElement{
-                speed: 700
-                score: 2
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
-            }
-
-            ListElement{
-                speed: 1000
-                score: 1
+            dynamicRoles: true
+            Component.onCompleted: {
+                append({"speed": 500, "score": 50})
+                append({"speed": 500, "score": 50})
+                append({"speed": 800, "score": 20})
+                append({"speed": 800, "score": 20})
+                append({"speed": 800, "score": 20})
+                append({"speed": 1000, "score": 5})
+                append({"speed": 1000, "score": 5})
+                append({"speed": 1000, "score": 5})
+                append({"speed": 1500, "score": 2})
+                append({"speed": 1500, "score": 2})
             }
         }
     }
