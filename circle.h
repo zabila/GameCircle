@@ -1,32 +1,26 @@
-#ifndef CIRCLE_H
-#define CIRCLE_H
+#pragma once
 
 #include <QObject>
 
 class Circle : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(int x READ getRandomX NOTIFY xPosition())
-    Q_PROPERTY(int y READ getRandomY NOTIFY yPosition())
+    Q_PROPERTY(double x READ getRandomX NOTIFY xPosition())
+    Q_PROPERTY(double y READ getRandomY NOTIFY yPosition())
 
 public:
     explicit Circle(QObject *parent = nullptr);
-    const int getRandomX();
-    const int getRandomY();
+    double getRandomX();
+    double getRandomY();
 signals:
     void xPosition();
     void yPosition();
 public slots:
-    slotPositionX();
-    slotPositionY();
+    void slotPositionX();
+    void slotPositionY();
 
 private:
-    int x;
-    int y;
+    double x = 0;
+    double y = 0;
 };
 
-
-
-
-
-#endif // CIRCLE_H

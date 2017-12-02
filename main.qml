@@ -9,8 +9,8 @@ Window {
     color: "azure"
     title: qsTr("Test")
 
-    property int account: 0
-    property int counts: 0
+    property double account: 0
+    property double counts: 0
 
     Item {
         anchors.fill: parent
@@ -110,8 +110,8 @@ Window {
             Timer {
                 interval: speed; running: true; repeat: true
                 onTriggered: {
-                    x = objCircle.slotPositionX()
-                    y = objCircle.slotPositionY()
+                    x = objCircle.x
+                    y = objCircle.y
                 }
             }
         }

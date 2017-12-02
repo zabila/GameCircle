@@ -1,8 +1,8 @@
+#include "circle.h"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QObject>
-
-#include "circle.h"
 
 int main(int argc, char *argv[])
 {

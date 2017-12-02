@@ -1,30 +1,28 @@
 #include "circle.h"
 
 Circle::Circle(QObject *parent) : QObject(parent)
-  ,x(0)
-  ,y(0)
 {
 
 }
 
-const int Circle::getRandomY()
+double Circle::getRandomY()
 {
     y = rand() % 540;
     return y;
 }
 
-const int Circle::getRandomX()
+double Circle::getRandomX()
 {
       x = rand() % 540;
      return x;
 }
 
-Circle::slotPositionX()
+void Circle::slotPositionX()
 {
     emit getRandomX();
 }
 
-Circle::slotPositionY()
+void Circle::slotPositionY()
 {
   emit getRandomY();
 }
