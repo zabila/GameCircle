@@ -2,6 +2,7 @@ TEMPLATE = app
 
 QT += qml quick
 CONFIG += c++14
+QT += multimedia
 
 SOURCES += main.cpp \
     circle.cpp

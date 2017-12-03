@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>StartMenu.qml</file>
+        <file>Game.qml</file>
+        <file>Settings.qml</file>
+        <file>levels.js</file>
     </qresource>
 </RCC>
